@@ -1,0 +1,20 @@
+body {
+    background: url(SCREEN.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center top;
+  }
+
+  h1{
+    color: orange;
+    font-size: medium;
+    vertical-align: text-top;
+    font-family: monospace
+  }
+
+  h2{
+    color: orange;
+    font-size: large;
+    vertical-align: text-top;
+    font-family: monospace
+  }
