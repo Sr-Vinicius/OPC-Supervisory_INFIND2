@@ -1,6 +1,8 @@
 <html>
 <head>
-<title>LCARS USS ENTERPRISE</title>
+<title>LCARS USS ENTERPRISE
+  
+</title>
 <meta charset="utf-8"/>
 <HTA:APPLICATION
   APPLICATIONNAME="LCARS USS ENTERPRISE"
@@ -24,16 +26,18 @@
 </head>
 
 <link rel="stylesheet" href="stilo.css">
-<body bgcolor="black">
 
+<body bgcolor="black">
   <h1>
 	<Input ID="Close"  onclick="Window_OnClose" type="button" value="Close">
     SCADA - Supervisory Control and Data Acquisition - UFU
   <h1>
-    
+
   <h2>
-    <Input ID="Read"  onclick="GetValue" type="button" value="Read">
+    <div id=PV> Esperando OPC </div>
   </h2>
+
+    <Input ID="Read_OPC"  onclick="UpdateValue()" type="button" value="Read_OPC">  
 
 </body>
 </html>

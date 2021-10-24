@@ -1,7 +1,14 @@
+from time import sleep
 import OpenOPC
 
-opc = OpenOPC.client()
-opc.connect('Graybox.Simulator.1')
-print(str(opc['numeric.sin.uint8']))
+while True:
+    opc = OpenOPC.client()
+    opc.connect('Graybox.Simulator.1')
+    valor = opc['numeric.sin.uint8']
+    opc.close()
 
-opc.close()
+    file = open("opcvalue.txt","w")
+    file.write(str(valor))
+    file.close()
+    sleep(1)
+
