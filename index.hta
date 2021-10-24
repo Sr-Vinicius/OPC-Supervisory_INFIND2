@@ -29,15 +29,18 @@
 
 <body bgcolor="black">
   <h1>
+  <Input ID="Read"  onclick="Read()" type="button" value="Check DB">
 	<Input ID="Close"  onclick="Window_OnClose" type="button" value="Close">
     SCADA - Supervisory Control and Data Acquisition - UFU
   <h1>
 
   <h2>
     <div id=PV> Esperando OPC </div>
+    <br/>
+    <Input ID="Read_OPC"  onclick="UpdateValue()" type="button" value="Read OPC">
+    <br/>
+    <Input ID="Clear_DB"  onclick="ClearDB()" type="button" value="Clear DB">  
   </h2>
-
-    <Input ID="Read_OPC"  onclick="UpdateValue()" type="button" value="Read_OPC">  
 
 </body>
 </html>
